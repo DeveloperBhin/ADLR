@@ -1,0 +1,10 @@
+<header>Jamhuri ya Muungano wa Tanzania
+            <p> WIZARA YA ELIMU, SAYANSI NA TEKNOLOJIA</p></header>
+            <br>
+            <br>
+            {%if message in messages%}
+            <p>{{message}}</p>
+            {%endif%}
+       <form action="" method="POST">
+        {%csrf_token%}
+      {{log}}
